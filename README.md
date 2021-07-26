@@ -1,2 +1,2 @@
 ### MY LUNCH BOOK
-spring boot(gragle) + react
+spring boot(gradle) + react
