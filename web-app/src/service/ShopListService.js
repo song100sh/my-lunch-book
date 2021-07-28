@@ -1,5 +1,3 @@
-'use strict';
-
 import axios from 'axios';
 
 const SHOP_API_BASE_URL = "http://localhost:8080/api/shop";

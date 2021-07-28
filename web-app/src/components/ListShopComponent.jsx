@@ -34,8 +34,12 @@ class ListShopComponent extends Component {
             <tbody>
             {
               this.state.shopList.map(
-                shop => {
-                }
+                shop =>
+                  <tr key={shop.local_index}>
+                    <td>{shop.shopName}</td>
+                    <td>{shop.foodName}</td>
+                    <td>{shop.localName}</td>
+                  </tr>
               )
             }
             </tbody>
@@ -46,4 +50,4 @@ class ListShopComponent extends Component {
   }
 }
 
-export default;
+export default ListShopComponent;
