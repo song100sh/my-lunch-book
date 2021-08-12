@@ -10,7 +10,7 @@ class FooterComponent extends Component {
   
   render() {
     return (
-      <div>
+      <div style={{'text-align': 'center'}}>
         <footer className={"footer"}>
           <span className={"text-muted"}>made by song100sh</span>
         </footer>

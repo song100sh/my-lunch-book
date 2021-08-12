@@ -1,4 +1,6 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import HeaderComponent from './components/HeaderComponent';
 import ListShopComponent from './components/ListShopComponent';

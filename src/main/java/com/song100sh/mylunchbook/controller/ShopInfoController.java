@@ -15,8 +15,11 @@ import java.util.List;
 @RequestMapping("/api")
 public class ShopInfoController {
 
-    @Autowired
-    private ShopInfoService shopInfoService;
+    private final ShopInfoService shopInfoService;
+
+    public ShopInfoController(ShopInfoService shopInfoService) {
+        this.shopInfoService = shopInfoService;
+    }
 
     @GetMapping("/shop")
     public List<ShopInfo> getAllShopInfo() {

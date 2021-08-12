@@ -10,8 +10,11 @@ import java.util.List;
 @Service
 public class ShopInfoService {
 
-    @Autowired
-    private ShopInfoRepository shopInfoRepository;
+    private final ShopInfoRepository shopInfoRepository;
+
+    public ShopInfoService(ShopInfoRepository shopInfoRepository) {
+        this.shopInfoRepository = shopInfoRepository;
+    }
 
     public List<ShopInfo> getAllShopInfo() {
         return shopInfoRepository.findAll();

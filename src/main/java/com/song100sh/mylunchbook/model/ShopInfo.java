@@ -12,15 +12,15 @@ import javax.persistence.*;
 public class ShopInfo {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer local_index;
+    @Column(name = "local_index")
+    private Integer localIndex;
 
-    @Column(name = "localName")
+    @Column(name = "local_name")
     private String localName;
 
-    @Column(name = "shopName")
+    @Column(name = "shop_name")
     private String shopName;
 
-    @Column(name = "foodName")
+    @Column(name = "food_name")
     private String foodName;
 }
